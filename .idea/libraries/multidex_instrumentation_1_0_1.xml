@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="multidex-instrumentation-1.0.1">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/multidex-instrumentation/1.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/multidex-instrumentation/1.0.1/jars/classes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:30b8b249de19e869284fdede23300ed1b144fb2a7d508e1b70af34c480231c56
+size 459

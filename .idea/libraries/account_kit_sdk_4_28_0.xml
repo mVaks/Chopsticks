@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="account-kit-sdk-4.28.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.facebook.android/account-kit-sdk/4.28.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.facebook.android/account-kit-sdk/4.28.0/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d627e6374a4086ddb2aaff3e6d7c416e26a140b7bddf8bf7cf0a0baaec2abb3
+size 437

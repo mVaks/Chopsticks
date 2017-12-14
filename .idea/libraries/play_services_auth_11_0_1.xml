@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="play-services-auth-11.0.1">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.1/jars/classes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b4873953cc4bd3512eca26e4155d97078b0ca3baa3ddfebf4e2d5d73f9ed4a0
+size 450

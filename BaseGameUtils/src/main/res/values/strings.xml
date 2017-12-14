@@ -1,8 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="sign_in_other_error">There was an issue with sign-in, please try again later.</string>
-    <string name="sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
-    <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
-    <string name="license_failed">License check failed.</string>
-    <string name="unknown_error">Unknown error.</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e219ecc4ac79236a5a31dc58689b7c1c34a29a49d88c242301642b3324554865
+size 759

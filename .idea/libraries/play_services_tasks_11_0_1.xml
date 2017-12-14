@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="play-services-tasks-11.0.1">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.1/jars/classes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:313589cd497c97fa4f2701b9e5116bfc941a39b61320393d485b6974728b6222
+size 453

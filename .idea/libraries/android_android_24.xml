@@ -1,9 +1,3 @@
-<component name="libraryTable">
-  <library name="android-android-24">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-24/android.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e6e5a64ed976ff44111c649584d570f3a7a8884641e6c8bbc05e6759f34cc03
+size 264

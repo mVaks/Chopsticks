@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="play-services-wearable-10.2.6">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.6/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.6/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:c429f0182a4ecf2a35459e46736e83d3abd0958724271ae7fd7b4dad239fce50
+size 462

@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<alpha xmlns:android="http://schemas.android.com/apk/res/android"
-   android:interpolator="@android:anim/accelerate_interpolator"
-   android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="500" />
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2f7eb66a046392e4c37d211d8f128fb9e5831d654cf2112a82b648da6bb1797
+size 244

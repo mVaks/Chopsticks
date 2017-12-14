@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="play-services-analytics-impl-10.2.6">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.6/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.6/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e760c17cf0eac2a3f36b3b7176998595f0abf4f99c4cb83ed576c8562a3ff683
+size 480

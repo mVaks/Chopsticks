@@ -1,17 +1,3 @@
-package com.luxser.chopsticksOnline;
-
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
-public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:085e32a93cef228d7e732614010c3a5f4f35469fd7dcb4a9e2d75db0e74a434c
+size 421

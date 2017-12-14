@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="firebase-appindexing-10.2.6">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.6/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.6/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:51f786d37c44ad52290540ab0fb3d17a5205e4b1db8da01e4a4ee4dd053c7e77
+size 450

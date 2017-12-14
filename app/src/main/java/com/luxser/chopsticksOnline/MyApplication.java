@@ -1,19 +1,3 @@
-package com.luxser.chopsticksOnline;
-
-import android.app.Application;
-import android.content.Context;
-import android.support.multidex.MultiDex;
-
-/**
- * Created by Michael on 7/19/2017.
- */
-
-public class MyApplication extends Application {
-
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9ffee0f378352f47d193d52b6de219aaee0ef25a734fb3d971907c7033a0885
+size 404

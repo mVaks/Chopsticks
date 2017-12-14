@@ -1,12 +1,3 @@
-<component name="libraryTable">
-  <library name="cardview-v7-23.4.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/23.4.0/cardview-v7-23.4.0-sources.jar!/" />
-    </SOURCES>
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:57fcee98883bbbcee0a8168e25bc81f2de28deed88d07259a11a2c187379de9d
+size 603

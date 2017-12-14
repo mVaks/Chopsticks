@@ -1,11 +1,3 @@
-<component name="libraryTable">
-  <library name="hamcrest-core-1.3">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
-    </SOURCES>
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2ac1d0dfcabcdf983cd999f0477acdd745ca0b7fa4f4d0385b4a97f1ec34bf7
+size 526

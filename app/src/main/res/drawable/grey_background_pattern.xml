@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<bitmap
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:src="@drawable/grey_background_pattern_tile"
-        android:tileMode="repeat"
-        android:dither="true" />
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d5af8fed1e1b23a56f35fe7fcddee6e362d105212b7d0eb308733669d25bfcc
+size 248

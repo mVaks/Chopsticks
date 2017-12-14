@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="play-services-basement-8.4.0">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res" />
-      <root url="jar://$PROJECT_DIR$/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f96103b236aa54391fe316290ead3a085968d5c271fd59218f9d3ef6e0aaf8d0
+size 479

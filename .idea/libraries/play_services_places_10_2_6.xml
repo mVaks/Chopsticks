@@ -1,10 +1,3 @@
-<component name="libraryTable">
-  <library name="play-services-places-10.2.6">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.6/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.6/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:94edf6963d2a93d94363a79a742ae4e6b1d8ea28f2eab7eee8ce85f8a433eb22
+size 456
