@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2013 Google Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- SIGN-IN SCREEN -->
+    <LinearLayout android:id="@+id/screen_sign_in" style="@style/LLScreen" android:background="@drawable/gradient">
+        <TextView style="@style/GameName" />
+        <TextView style="@style/GameBlurb" android:gravity="center" />
+ 		
+ 		<Button android:id="@+id/button_tutorial"
+            style="@style/MainScreenButton"
+            android:text="@string/tutorial" />
+        <Button android:id="@+id/button_offline"
+            style="@style/MainScreenButton"
+            android:text="@string/offline" />
+        <Button android:id="@+id/button_single_player"
+            style="@style/MainScreenButton"
+            android:text="@string/single_player" />
+        <com.facebook.login.widget.LoginButton
+    android:id="@+id/connectWithFbButton"
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    style="@style/FacebookLoginButton"
+     android:paddingTop="11dp"
+     android:onClick="onFaceBookClicked"
+     android:background="@drawable/layout_bg"
+     
+        android:paddingBottom="11dp"
+    android:text="  connect_with_facebook" />
+        <com.google.android.gms.common.SignInButton android:id="@+id/button_sign_in"
+            android:text="@string/signin_button"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            style="@style/SignInButton" />
+       
+    </LinearLayout>
+
+    <!-- MAIN SCREEN -->
+    <LinearLayout android:id="@+id/screen_main" style="@style/LLScreen" android:background="@drawable/gradient" >
+      <!--    <TextView
+                android:id="@+id/name_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_small"
+                android:text=""
+                android:textAppearance="@style/HelpText.Caption" />
+                --> 
+        <TextView style="@style/GameTitle" />
+      <!--  
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/single_player_explanation" />
+            -->
+        
+            <!--android:onClick="onQuickMatchClicked"  --> 
+        <Button android:id="@+id/button_quick_game"
+            style="@style/MainScreenButton"
+            android:text="@string/quick_game" />
+             <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/quick_game_explanation" />
+             
+            <!--android:onClick="onStartMatchClicked"  --> 
+        <Button android:id="@+id/button_invite_players"
+            style="@style/MainScreenButton"
+            android:text="@string/invite_players" />
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/invite_players_explanation" />
+                    <!--android:onClick="onCheckGamesClicked"  --> 
+        <Button android:id="@+id/button_see_invitations"
+            style="@style/MainScreenButton"
+            android:text="@string/see_invitations" />
+        
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/see_invitations_explanation" />
+          <Button android:id="@+id/button_leaderboard"
+              
+            style="@style/MainScreenButton"
+            android:text="@string/leaderboard" />
+            
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/see_leaderboard" /> 
+        
+        <Button android:id="@+id/button_sign_out"
+            style="@style/SignOutButton"
+            android:text="@string/sign_out" />
+        <!-- 
+           <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/logout" />  -->
+    </LinearLayout>
+    <!-- MAIN SCREEN -->
+    <LinearLayout android:id="@+id/screen_facebook" style="@style/LLScreen" android:background="@drawable/gradient" >
+        <!--    <TextView
+                  android:id="@+id/name_field"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_margin="@dimen/margin_small"
+                  android:text=""
+                  android:textAppearance="@style/HelpText.Caption" />
+                  -->
+        <TextView style="@style/GameTitleFB" />
+        <!--
+          <TextView style="@style/MainScreenButtonBlurb"
+              android:text="@string/single_player_explanation" />
+              -->
+
+        <!--android:onClick="onQuickMatchClicked"  -->
+        <Button android:id="@+id/button_quick_gameFB"
+            style="@style/MainScreenButtonFB"
+            android:text="@string/quick_game" />
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/quick_game_explanation" />
+
+        <!--android:onClick="onStartMatchClicked"  -->
+        <!-- SendButton-->
+        <Button android:id="@+id/button_invite_playersFB"
+            style="@style/MainScreenButtonFB"
+            android:text="@string/invite_players" />
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/invite_players_explanation" />
+        <!--android:onClick="onCheckGamesClicked"  -->
+        <Button android:id="@+id/button_see_invitationsFB"
+            style="@style/MainScreenButtonFB"
+            android:text="@string/see_invitations" />
+
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/see_invitations_explanation" />
+        <Button android:id="@+id/button_leaderboardFB"
+
+            style="@style/MainScreenButtonFB"
+            android:text="@string/leaderboard" />
+
+        <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/see_leaderboard" />
+
+        <Button android:id="@+id/button_sign_outFB"
+            style="@style/SignOutButton"
+            android:text="@string/sign_out" />
+        <!--
+           <TextView style="@style/MainScreenButtonBlurb"
+            android:text="@string/logout" />  -->
+    </LinearLayout>
+    <!-- INVITATION POPUP -->
+    <LinearLayout android:id="@+id/invitation_popup" style="@style/InvPopup">
+        <TextView android:id="@+id/incoming_invitation_text" style="@style/InvPopupText" />
+        <Button android:id="@+id/button_accept_popup_invitation"
+            style="@style/InvPopupButton"
+            android:text="@string/accept_popup_invite" />
+    </LinearLayout>
+<!-- Tutorial 1 -->
+    <LinearLayout android:id="@+id/tutorial_one" style="@style/Tutorial" android:visibility="gone">
+        <TextView android:id="@+id/tutorial_one_text" style="@style/tutorial_one" />
+        <Button android:id="@+id/next_one"
+            style="@style/InvPopupButton"
+            android:text="@string/next" />
+    </LinearLayout>
+    <!-- Tutorial 2 -->
+    <LinearLayout android:id="@+id/tutorial_two" style="@style/Tutorial" android:visibility="gone">
+        <TextView android:id="@+id/tutorial_two_text" style="@style/tutorial_two" />
+        <Button android:id="@+id/previous_two"
+            style="@style/InvPopupButton"
+            android:text="@string/previous" />
+        <Button android:id="@+id/next_two"
+            style="@style/InvPopupButton"
+            android:text="@string/next" />
+        
+    </LinearLayout>
+    <!-- Tutorial 3 -->
+    <LinearLayout android:id="@+id/tutorial_three" style="@style/Tutorial" android:visibility="gone">
+        <TextView android:id="@+id/tutorial_three_text" style="@style/tutorial_three" />
+         <Button android:id="@+id/previous_three"
+            style="@style/InvPopupButton"
+            android:text="@string/previous" />
+        <Button android:id="@+id/next_three"
+            style="@style/InvPopupButton"
+            android:text="@string/next" />
+        
+    </LinearLayout>
+    <!-- Tutorial 4 -->
+    <LinearLayout android:id="@+id/tutorial_four" style="@style/Tutorial" android:visibility="gone">
+        <TextView android:id="@+id/tutorial_four_text" style="@style/tutorial_four" />
+          <Button android:id="@+id/previous_four"
+            style="@style/InvPopupButton"
+            android:text="@string/previous" />
+        <Button android:id="@+id/next_four"
+            style="@style/InvPopupButton"
+            android:text="@string/next" />
+       
+    </LinearLayout>
+    <!-- Tutorial 5 -->
+    <LinearLayout android:id="@+id/tutorial_five" style="@style/Tutorial" android:visibility="gone">
+        <TextView android:id="@+id/tutorial_five_text" style="@style/tutorial_five" />
+        <Button android:id="@+id/previous_five"
+            style="@style/InvPopupButton"
+            android:text="@string/previous" />s
+        <Button android:id="@+id/next_five"
+            style="@style/InvPopupButton"
+            android:text="@string/next" />
+         
+    </LinearLayout>
+    <!-- Tutorial 6 -->
+    <LinearLayout android:id="@+id/tutorial_six" style="@style/Tutorial" android:visibility="gone">
+        <TextView android:id="@+id/tutorial_six_text" style="@style/tutorial_six" />
+          <Button android:id="@+id/no"
+            style="@style/InvPopupButton"
+            android:text="@string/no" />
+        <Button android:id="@+id/next_six"
+            style="@style/InvPopupButton"
+            android:text="@string/yes" />
+       
+    </LinearLayout>
+    <!-- "PLEASE WAIT" SCREEN -->
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AAAAAAAA"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progress_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- GAMEPLAY SCREEN -->
+  <GridLayout 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+                      android:visibility="gone"
+      
+       android:id="@+id/screen_game" 
+    android:columnCount="4"
+    android:orientation="vertical"
+    android:columnWidth="420dp"
+    android:rowCount="4"
+            android:background="@drawable/background"
+    android:gravity="bottom"
+    android:stretchMode="columnWidth" >
+
+        <RelativeLayout
+            android:id="@+id/middle"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_row="2"
+    
+            android:gravity="center_vertical|center_horizontal" >
+
+          
+            
+        </RelativeLayout>
+
+                <RelativeLayout
+            android:id="@+id/bottomMiddle"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_row="3"
+    
+            android:gravity="center_vertical|center_horizontal" >
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/topleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="start|top"
+        android:layout_row="0"
+
+        android:gravity="top|start" >
+        
+        <ImageView
+            android:id="@+id/oneTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/onetopleft" />
+
+        <ImageView android:paddingLeft="@dimen/activity_horizontal_margin" 
+            android:id="@+id/zeroTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+             android:scaleX="1.0" android:paddingRight="@dimen/activity_horizontal_margin" 
+        android:paddingBottom="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:scaleY="1.0"
+            android:src="@drawable/zerotopleft"
+            android:visibility="gone" />
+
+        <ImageView android:paddingLeft="@dimen/activity_horizontal_margin" 
+            android:id="@+id/twoTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+             android:scaleX="1.0" android:paddingRight="@dimen/activity_horizontal_margin" 
+        android:paddingBottom="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:scaleY="1.0"
+            android:src="@drawable/twotopleft"
+            android:visibility="gone" />
+
+        <ImageView android:paddingLeft="@dimen/activity_horizontal_margin" 
+            android:id="@+id/threeTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+             android:scaleX="1.0" android:paddingRight="@dimen/activity_horizontal_margin" 
+        android:paddingBottom="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:scaleY="1.0"
+            android:src="@drawable/threetopleft"
+            android:visibility="gone" />
+
+        <ImageView android:paddingLeft="@dimen/activity_horizontal_margin" 
+            android:id="@+id/fourTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+             android:scaleX="1.0" android:paddingRight="@dimen/activity_horizontal_margin" 
+        android:paddingBottom="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:scaleY="1.0"
+            android:src="@drawable/fourtopleft"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="start|bottom"
+        android:layout_row="3"
+
+        android:gravity="bottom|start" >
+
+        <ImageView
+            android:id="@+id/fourBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/fourbottomleft"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/threeBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/threebottomleft"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/oneBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/onebottomleft" />
+
+        <ImageView
+            android:id="@+id/twoBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/twobottomleft"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/zeroBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/zerobottomleft"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="end|top"
+        android:layout_row="0"
+
+        android:gravity="top|end" >
+
+        <ImageView
+            android:id="@+id/zeroTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/zerotopright"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/oneTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/onetopright" />
+
+        <ImageView
+            android:id="@+id/fourTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/fourtopright"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/threeTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/threetopright"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/twoTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/twotopright"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="end|bottom"
+        android:layout_row="3"
+
+        android:gravity="bottom|end" >
+
+        <ImageView
+            android:id="@+id/fourBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/fourbottomright"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/oneBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/onebottomright" />
+
+        <ImageView
+            android:id="@+id/threeBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/threebottomright"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/twoBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/twobottomright"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/zeroBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/zerobottomright"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="left|bottom"
+                android:gravity="left"
+        
+        android:layout_row="3"
+        android:background="@android:color/transparent"
+        android:text="@string/returnTo" 
+        android:textSize="@dimen/font_size"/>
+    
+    <TextView
+        android:id="@+id/bottomYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="center"
+        android:layout_marginRight="84dp"
+        android:layout_row="3"
+        android:editable="true"
+        android:text="@string/yourturn"
+        android:textSize="@dimen/font_size" />
+</GridLayout>
+</FrameLayout>
